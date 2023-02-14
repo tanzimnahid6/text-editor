@@ -75,6 +75,9 @@ document.getElementById('textCenter').addEventListener('click',function(){
         textBox.style.textAlign='center';
         return;
     }
+    else if(textBox.style.textAlign=='center'){
+       return;
+    }
    
     else{
         alert('Enter some text');
@@ -83,10 +86,13 @@ document.getElementById('textCenter').addEventListener('click',function(){
 })
 
 
-//text left
+//text right
 document.getElementById('textRight').addEventListener('click',function(){
     if(textBox.value!='' && textBox.style.textAlign!='right'){
         textBox.style.textAlign='right';
+        return;
+    }
+    else if(textBox.style.textAlign=='right'){
         return;
     }
    
